@@ -119,8 +119,13 @@ public class Main {
     }
 
 
+public static void overloadingTest(){
+        Practice1 a  = new Practice1();
+        a.overloadingMethod();
+}
+
    public static  void main(String [] args){
 
-   System.out.println(multiply(5, 9));
+overloadingTest();
    }
 }
