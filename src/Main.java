@@ -113,8 +113,14 @@ public class Main {
         }
     }
 
+    static int multiply(int a, int b){
+        int c = a*b;
+        return c;
+    }
+
 
    public static  void main(String [] args){
-        practiceForEach();
+
+   System.out.println(multiply(5, 9));
    }
 }
