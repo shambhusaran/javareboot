@@ -141,7 +141,16 @@ public static void printfPractice(){
 }
 
    public static  void main(String [] args){
-  DiceRoller roller = new DiceRoller();
+
+        Thali chickenThali = new Thali("rice", "Spanich", "mutton", "brownie");
+
+        System.out.println(chickenThali.dessert);
+
+
+        //constructor overloading
+
+        Thali vegthali = new Thali("rice", "Spanich", "Cheese Cake");
+                System.out.println(vegthali.dessert);
 
    }
 }
