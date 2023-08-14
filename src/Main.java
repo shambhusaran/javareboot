@@ -124,8 +124,24 @@ public static void overloadingTest(){
         a.overloadingMethod();
 }
 
-   public static  void main(String [] args){
 
-overloadingTest();
+public static void printfPractice(){
+
+        int a = 34;
+        double b = 4.9;
+        boolean c = true;
+        char d = '@';
+
+
+        System.out.printf("This is a integer value : %d", a);
+    System.out.printf("This is a boolean : %10b",c);//provide 10 spaces before the value
+    System.out.printf("This is a double : %.3f", b); //Limit the digits after decimal point
+    System.out.printf("This is a character : %-3c", d); //provides 3 spaces after the value
+    System.out.printf("This is an integer value again: %+d", a);
+}
+
+   public static  void main(String [] args){
+        printfPractice();
+
    }
 }
