@@ -140,11 +140,55 @@ public static void printfPractice(){
     System.out.printf("This is an integer value again: %+d", a);
 }
 
+public static  void objectsInArray(){
+    //how to create an array of objects
+
+
+
+    Food f1 = new Food("Momo");
+    Food f2 = new Food("Text Wrap");
+    Food f3 = new Food ("Bufallo Wings");
+
+
+    //Food [] refrigerator =  new Food[3];
+    // alternative method
+//    refrigerator[0] = f1;
+//    refrigerator[1] = f2;
+//    refrigerator[2] = f3;
+
+    Food [] refrigerator = {f1, f2,f3};
+
+    System.out.println(refrigerator[1].name);
+
+
+
+
+}
+
+
    public static  void main(String [] args){
 
 
-        Bike bike = new Bike();
-        System.out.println(bike);
+        objectsInArray();
+
+
+
+
+
+
+
+
+
+
+
+
+        //Method overriding starts here
+
+//        Bike bike = new Bike();
+//        System.out.println(bike);
+
+
+       //Constructor overloading starts here
 
 //        Thali chickenThali = new Thali("rice", "Spanich", "mutton", "brownie");
 //
