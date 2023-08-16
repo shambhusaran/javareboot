@@ -142,15 +142,19 @@ public static void printfPractice(){
 
    public static  void main(String [] args){
 
-        Thali chickenThali = new Thali("rice", "Spanich", "mutton", "brownie");
 
-        System.out.println(chickenThali.dessert);
+        Bike bike = new Bike();
+        System.out.println(bike);
 
-
-        //constructor overloading
-
-        Thali vegthali = new Thali("rice", "Spanich", "Cheese Cake");
-                System.out.println(vegthali.dessert);
+//        Thali chickenThali = new Thali("rice", "Spanich", "mutton", "brownie");
+//
+//        System.out.println(chickenThali.dessert);
+//
+//
+//        //constructor overloading
+//
+//        Thali vegthali = new Thali("rice", "Spanich", "Cheese Cake");
+//                System.out.println(vegthali.dessert);
 
    }
 }
