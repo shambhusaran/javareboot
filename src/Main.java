@@ -166,10 +166,20 @@ public static  void objectsInArray(){
 }
 
 
+public static void passingObjects(){
+
+        // passing objects in parameters
+
+        Garage grg = new Garage();
+        Bicycle cyc = new Bicycle("Honey Hunter");
+
+        grg.parkBicycle(cyc);
+}
+
    public static  void main(String [] args){
 
 
-        objectsInArray();
+passingObjects();
 
 
 
