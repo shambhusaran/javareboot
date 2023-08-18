@@ -176,21 +176,23 @@ public static void passingObjects(){
         grg.parkBicycle(cyc);
 }
 
+
+
+public static void saticKeyword(){
+
+//a static keyword makes a variable or item same for every object created of certain class.
+    // if changed or modified through an object the changes will be reflected in every other objects
+    // can be accessed without creation of the object
+
+        Friend f1 = new Friend("Ram");
+        Friend f2 = new Friend("Shyam");
+        Friend f3 = new Friend("Hari");
+     Friend.displayNumberOfFriends();
+    }
+
    public static  void main(String [] args){
 
-
-passingObjects();
-
-
-
-
-
-
-
-
-
-
-
+        saticKeyword();
 
         //Method overriding starts here
 
