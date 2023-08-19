@@ -190,9 +190,22 @@ public static void saticKeyword(){
      Friend.displayNumberOfFriends();
     }
 
+
+    public static void demonstrateInheritance(){
+// Inheritence is the main concept of OOP
+        // it states that a child class can inherit all the properties and methods of its parent class
+        // it is achived by extending the parent class to the child class
+        Bus bus = new Bus();
+        bus.go();
+
+        Jeep jeep = new Jeep();
+        System.out.println(jeep.speed);
+    }
+
    public static  void main(String [] args){
 
-        saticKeyword();
+        demonstrateInheritance();
+
 
         //Method overriding starts here
 
