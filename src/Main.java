@@ -202,9 +202,22 @@ public static void saticKeyword(){
         System.out.println(jeep.speed);
     }
 
+    public static void methodoverriding(){
+        Cat cat = new Cat();
+        cat.speak();
+    }
+
+    public static void superKeyword(){
+
+        Hero hero = new Hero("Shambhu MAN", 23, "shoot laser");
+        hero.speak();
+        hero.name = "Chaddi man";
+        System.out.println(hero.name);
+
+    }
    public static  void main(String [] args){
 
-        demonstrateInheritance();
+superKeyword();
 
 
         //Method overriding starts here
