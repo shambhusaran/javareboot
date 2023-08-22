@@ -215,28 +215,19 @@ public static void saticKeyword(){
         System.out.println(hero.name);
 
     }
+
+    public static  void abstractionDemo(){
+        //you cannot create an object of an abstract class
+        
+        Laptop laptop1 = new Laptop();
+        laptop1.turnOn();
+    }
    public static  void main(String [] args){
 
-superKeyword();
+abstractionDemo();
 
 
-        //Method overriding starts here
 
-//        Bike bike = new Bike();
-//        System.out.println(bike);
-
-
-       //Constructor overloading starts here
-
-//        Thali chickenThali = new Thali("rice", "Spanich", "mutton", "brownie");
-//
-//        System.out.println(chickenThali.dessert);
-//
-//
-//        //constructor overloading
-//
-//        Thali vegthali = new Thali("rice", "Spanich", "Cheese Cake");
-//                System.out.println(vegthali.dessert);
 
    }
 }
