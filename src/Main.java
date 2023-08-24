@@ -226,7 +226,42 @@ public static void saticKeyword(){
 
     public static  void encapsulationDemo(){
         Van van = new Van("Mercedes", "Sprinter", 100000);
-        van.setCost(30000);//setting value of cost through settermethod
+
+        System.out.println("Maker: "+ van.getMaker());
+        System.out.println("Model: "+ van.getModel());
+        System.out.println("Cost: "+ van.getCost());
+
+
+    }
+
+
+    public static void copyObjects(){
+        Van van = new Van("Mercedes", "Sprinter", 100000);
+
+        //   Van van1 = new Van("Toyota", "Yaris", 20000);
+
+
+        //van1 = van
+        //cannot do this because the address of the vans will be same we want to copy the details of van to van 1 this method will only
+        //show the same memorlylocation and doesnot create two different van objects
+
+        // van1.copy(van);
+
+
+        // but to copy the objects without creating the object first has different method by overloading the van constructor
+
+        Van van1 = new Van( van);
+
+
+        System.out.println(van);
+        System.out.println(van1);
+
+        //van.setCost(30000);//setting value of cost through settermethod
+        System.out.println("Maker: "+ van1.getMaker());
+        System.out.println("Model: "+ van1.getModel());
+        System.out.println("Cost: "+ van1.getCost());
+        System.out.println();
+
         System.out.println("Maker: "+ van.getMaker());
         System.out.println("Model: "+ van.getModel());
         System.out.println("Cost: "+ van.getCost());
@@ -235,8 +270,7 @@ public static void saticKeyword(){
     }
    public static  void main(String [] args){
 
-encapsulationDemo();
-
+copyObjects();
 
 
 

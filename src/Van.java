@@ -18,6 +18,11 @@ public class Van {
 
     }
 
+    Van(Van x){
+        this.copy(x);
+
+    }
+
     public String getMaker(){
         return maker;
     }
@@ -38,6 +43,13 @@ public class Van {
     }
     public void setCost(int cost){
         this.cost = cost;
+
+    }
+
+    public void copy(Van x){
+        this.maker = x.getMaker();
+        this.model = x.getModel();
+        this.cost = x.getCost();
 
     }
 }
