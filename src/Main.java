@@ -218,13 +218,21 @@ public static void saticKeyword(){
 
     public static  void abstractionDemo(){
         //you cannot create an object of an abstract class
-        
+
         Laptop laptop1 = new Laptop();
         laptop1.turnOn();
     }
+
+
+    public static  void encapsulationDemo(){
+        Van van = new Van("Mercedes", "Sprinter", 100000);
+        System.out.println("Maker: "+ van.getMaker());
+        System.out.println("Model: "+ van.getModel());
+        System.out.println("Cost: "+ van.getCost());
+    }
    public static  void main(String [] args){
 
-abstractionDemo();
+encapsulationDemo();
 
 
 
