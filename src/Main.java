@@ -226,9 +226,12 @@ public static void saticKeyword(){
 
     public static  void encapsulationDemo(){
         Van van = new Van("Mercedes", "Sprinter", 100000);
+        van.setCost(30000);//setting value of cost through settermethod
         System.out.println("Maker: "+ van.getMaker());
         System.out.println("Model: "+ van.getModel());
         System.out.println("Cost: "+ van.getCost());
+
+
     }
    public static  void main(String [] args){
 

@@ -12,9 +12,9 @@ public class Van {
     private int cost;
 
     Van(String maker, String model, int cost){
-        this.maker = maker;
-        this.model = model;
-        this.cost = cost;
+        setMaker(maker);
+       setModel(model);
+       setCost(cost);
 
     }
 
@@ -27,5 +27,17 @@ public class Van {
     }
     public int getCost(){
         return cost;
+    }
+    public void setMaker(String maker){
+       this. maker =maker;
+
+    }
+    public void setModel(String model){
+        this.model = model;
+
+    }
+    public void setCost(int cost){
+        this.cost = cost;
+
     }
 }
