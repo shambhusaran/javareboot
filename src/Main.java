@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class Main {
     public static void trainglePyramid(){
@@ -268,11 +269,24 @@ public static void saticKeyword(){
 
 
     }
+
+    public static void interfaceDemo(){
+        //interface is a description of what an object can do
+        // the interface methos must be implemented in the child class
+
+//        Rabbit rabbit = new Rabbit();
+//    rabbit.flee();
+
+        Fish fish = new Fish();
+        fish.flee();
+        fish.hunt();
+
+        Hawk hawk = new Hawk();
+        hawk.hunt();
+    }
    public static  void main(String [] args){
 
-copyObjects();
-
-
+interfaceDemo();
 
    }
 }
