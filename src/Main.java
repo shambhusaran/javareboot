@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class Main {
     public static void trainglePyramid(){
@@ -284,9 +282,38 @@ public static void saticKeyword(){
         Hawk hawk = new Hawk();
         hawk.hunt();
     }
+
+    public static void exceptionHandling() {
+        try {
+
+
+            Scanner scan1 = new Scanner(System.in);
+            System.out.println("Enter the first number");
+            int num1 = scan1.nextInt();
+
+            System.out.println("Enter Second number");
+            int num2 = scan1.nextInt();
+
+            int value = num1 / num2;
+
+            System.out.println("the value = " + value);
+        } catch (ArithmeticException e) {
+            System.out.println("Dinominator cannot be zero blad");
+
+        }
+        catch (InputMismatchException e){
+            System.out.println("You cannot enter alphabet blad");
+        }
+        catch (Exception e){
+            System.out.println("Exception occured");
+        }
+        finally {
+            System.out.println("This code will always run");
+        }
+    }
    public static  void main(String [] args){
 
-interfaceDemo();
+exceptionHandling();
 
    }
 }
